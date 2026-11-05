@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Portfolio SA D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="Photo cv.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B6B5C',
+                        secondary: '#E8A33D',
+                        accent: '#C1502E',
+                        dark: '#1B2420',
+                        light: '#FBF9F4'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<header class="sticky top-0 z-50 bg-dark/95 backdrop-blur-sm shadow-xl transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="font-display text-2xl text-white hover:text-accent transition-colors duration-300">
+            SAIDOU DIA <span class="text-primary">SIO SISR</span>
+        </a>
+
+        <div class="hidden lg:flex space-x-6 text-base font-medium">
+            <a href="index.html" class="nav-link text-white transition-colors duration-200">Accueil</a>
+            <a href="projets.html" class="nav-link text-white transition-colors duration-200">Epreuve E5</a>
+            <a href="epreuves.html" class="nav-link text-white transition-colors duration-200">Epreuve E6</a>
+            <a href="entreprise.html" class="nav-link text-white transition-colors duration-200">Entreprise</a>
+            <a href="veille.html" class="nav-link text-white transition-colors duration-200">Veille Technologique</a>
+        </div>
+
+        <button id="menu-button" class="lg:hidden text-white focus:outline-none">
+            <i data-feather="menu" class="w-8 h-8"></i>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-dark/90 text-center pb-4">
+        <a href="index.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Accueil</a>
+        <a href="projets.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Epreuve E5</a>
+        <a href="epreuves.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Epreuve E6</a>
+        <a href="entreprise.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Entreprise</a>
+        <a href="veille.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Veille Technologique</a>
+    </div>
+</header>
+
+<body class="bg-light text-dark font-sans">
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="mb-16 text-center reveal">
+                <p class="eyebrow mb-3">S'informer, comprendre, anticiper</p>
+                <h1 class="font-display text-5xl mb-8 text-dark">Veille Technologique</h1>
+                <div class="max-w-4xl mx-auto info-card p-8 text-left border-l-4 border-accent">
+                    <p class="text-lg leading-relaxed">
+                        Dans un domaine qui évolue vite comme les réseaux et la cybersécurité, je suis régulièrement l'actualité technologique : nouvelles menaces, mises à jour de sécurité, évolutions des outils que j'utilise au quotidien. Voici une sélection des sujets que j'ai suivis.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <article class="info-card p-6 reveal">
+                    <div class="bg-primary/10 w-10 h-10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="clipboard" class="text-primary w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase text-primary">GLPI</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Mises à jour de sécurité pour GLPI</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Courant 2026, l'équipe de GLPI a publié plusieurs mises à jour (versions 11.0.x et 10.0.x) corrigeant des failles de sécurité critiques, dont des injections SQL et des failles XSS découvertes dans le cœur de l'outil et certains plugins communautaires.</p>
+                    <a href="https://www.glpi-project.org/fr/blog/" target="_blank" class="text-primary font-semibold hover:underline text-sm">Lire la source (Blog GLPI) →</a>
+                </article>
+
+                <article class="info-card p-6 reveal">
+                    <div class="bg-secondary/10 w-10 h-10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="users" class="text-secondary w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase text-secondary">Active Directory</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">« Certighost » : une faille critique dans AD CS</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        En juillet 2026, des chercheurs ont révélé une vulnérabilité baptisée « Certighost » (CVE-2026-54121, CVSS 8,8) dans Active Directory Certificate Services. Elle permet à un simple compte utilisateur standard de compromettre l'ensemble du domaine Active Directory en abusant du service de certificats.</p>
+                    <a href="https://www.it-connect.fr/certighost-cve-2026-54121-ad-cs-controleur-de-domaine/" target="_blank" class="text-secondary font-semibold hover:underline text-sm">Lire la source (IT-Connect) →</a>
+                </article>
+
+                <article class="info-card p-6 reveal">
+                    <div class="bg-accent/10 w-10 h-10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="shield" class="text-accent w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase text-accent">Panorama / PAN-OS</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Faille critique sur les pare-feu Palo Alto (PAN-OS)</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        En mai 2026, Palo Alto Networks a alerté sur une faille critique (CVE-2026-0300, CVSS 9,3) dans le portail d'authentification User-ID de PAN-OS, permettant l'exécution de code à distance avec les droits root sur les pare-feu PA-Series et VM-Series. Panorama lui-même n'était pas impacté, mais gère les objets et règles déployés sur ces équipements.</p>
+                    <a href="https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html" target="_blank" class="text-accent font-semibold hover:underline text-sm">Lire la source (The Hacker News) →</a>
+                </article>
+
+                <article class="info-card p-6 reveal">
+                    <div class="bg-primary/10 w-10 h-10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="wifi" class="text-primary w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase text-primary">Cisco</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Faille critique sur Cisco Catalyst SD-WAN</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Une vulnérabilité critique (CVE-2026-20127, CVSS 10/10) touchant Cisco Catalyst SD-WAN permettait à un attaquant non authentifié de contourner l'authentification et d'obtenir des droits administrateur sur l'équipement. L'exploitation était active depuis 2023 selon Cisco Talos.</p>
+                    <a href="https://itsocial.fr/cybersecurite/cybersecurite-actualites/faille-catalyst-sd-wan-cisco-publie-six-correctifs-simultanes-mais-laisse-quatre-branches-en-fin-de-maintenance-sans-remediation/" target="_blank" class="text-primary font-semibold hover:underline text-sm">Lire la source (IT Social) →</a>
+                </article>
+
+                <article class="info-card p-6 reveal">
+                    <div class="bg-secondary/10 w-10 h-10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="terminal" class="text-secondary w-5 h-5"></i>
+                    </div>
+                    <span class="text-xs font-bold uppercase text-secondary">PowerShell</span>
+                    <h3 class="text-xl font-semibold mt-2 mb-3">Faille RCE corrigée dans PowerShell</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        En août 2026, Microsoft a corrigé <strong>CVE-2026-50523</strong>, une faille d'exécution de code à distance dans PowerShell.
+                    </p>
+                    <a href="https://thewindowsupdate.com/2026/08/14/cve-2026-50523-microsoft-powershell-remote-code-execution-vulnerability/" target="_blank" class="text-secondary font-semibold hover:underline text-sm">Lire la source (MSRC) →</a>
+                </article>
+
+            </div>
+
+            <div class="text-center mt-16 reveal">
+                <a href="index.html" class="inline-flex items-center px-8 py-4 bg-dark text-white font-semibold rounded-full hover:bg-primary transition-all duration-300">
+                    <i data-feather="arrow-left" class="mr-2 w-5 h-5"></i> Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; SAIDOU DIA - Portfolio BTS SIO SISR</p>
+            <p class="text-sm opacity-75 mt-2"></p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-feather', 'menu');
+            } else {
+                icon.setAttribute('data-feather', 'x');
+            }
+            feather.replace();
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.querySelector('#menu-button i').setAttribute('data-feather', 'menu');
+                feather.replace();
+            });
+        });
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

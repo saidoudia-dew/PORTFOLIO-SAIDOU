@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Épreuve E6 - Portfolio SAIDOU DIA </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Photo cv.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B6B5C',
+                        secondary: '#E8A33D',
+                        accent: '#C1502E',
+                        dark: '#1B2420',
+                        light: '#FBF9F4'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<header class="sticky top-0 z-50 bg-dark/95 backdrop-blur-sm shadow-xl transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="index.html" class="font-display text-2xl text-white hover:text-accent transition-colors duration-300">
+            SA D <span class="text-primary">SIO SISR</span>
+        </a>
+
+        <div class="hidden md:flex space-x-8 text-base font-medium">
+            <a href="index.html" class="nav-link text-white transition-colors duration-200">Accueil</a>
+            <a href="projets.html" class="nav-link text-white transition-colors duration-200">Epreuve E5</a>
+            <a href="epreuves.html" class="nav-link text-white transition-colors duration-200">Epreuve E6</a>
+            <a href="entreprise.html" class="nav-link text-white transition-colors duration-200">Entreprise</a>
+            <a href="veille.html" class="nav-link text-white transition-colors duration-200">Veille Technologique</a>
+        </div>
+
+        <button id="menu-button" class="md:hidden text-white focus:outline-none">
+            <i data-feather="menu" class="w-8 h-8"></i>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-dark/90 text-center pb-4">
+        <a href="index.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Accueil</a>
+        <a href="projets.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Epreuve E5</a>
+        <a href="epreuves.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Epreuve E6</a>
+        <a href="entreprise.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Entreprise</a>
+        <a href="veille.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Veille Technologique</a>
+    </div>
+</header>
+
+<body class="bg-light text-dark font-sans">
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="mb-16 text-center reveal">
+                <p class="eyebrow mb-3">Certification</p>
+                <h1 class="font-display text-5xl mb-8 text-dark">Épreuve E6</h1>
+                <div class="max-w-4xl mx-auto info-card p-8 text-left border-l-4 border-secondary">
+                    <p class="text-lg leading-relaxed">
+                        L'épreuve <strong>E6</strong> porte sur le déploiement, l'exploitation et la maintenance d'un service en environnement de production, en autonomie. Elle s'appuie sur des <strong>fiches de réalisation</strong> détaillant le contexte, les objectifs et les compétences mobilisées lors de mes missions en entreprise.
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="font-display text-3xl mb-10 border-b-2 border-secondary inline-block pb-2 reveal">Mes réalisations</h2>
+            <!-- TODO : copie ce bloc pour chaque fiche de réalisation (généralement 2 à 3 pour l'E6) -->
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+
+                <article class="info-card overflow-hidden reveal">
+                    <div class="h-48 bg-dark flex items-center justify-center text-white/40">
+                        <img src="act.png" alt="">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold uppercase text-secondary">Contexte à préciser</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-3">Active Directory</h3>
+                        <p class="text-gray-600 text-sm mb-4">Décris la mission : objectif, contraintes, outils utilisés, résultat obtenu.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tag tag-network">Réseau</span>
+                            <span class="tag tag-linux">Administration</span>
+                        </div>
+                        <!-- TODO : lien vers ta fiche PDF -->
+                        <a href="E5 Active directory_sitka DIA SAIDOU.pdf" target="_blank" class="text-secondary font-semibold hover:underline">Voir la fiche →</a>
+                    </div>
+                </article>
+
+                <article class="info-card overflow-hidden reveal">
+                    <div class="h-48 bg-dark flex items-center justify-center text-white/40">
+                        <img src="gl.png" alt="">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold uppercase text-secondary">Contexte à préciser</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-3">GLPI</h3>
+                        <p class="text-gray-600 text-sm mb-4">Décris la mission : objectif, contraintes, outils utilisés, résultat obtenu.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tag tag-debian">Sécurité</span>
+                            <span class="tag tag-network">Supervision</span>
+                        </div>
+                        <!-- TODO : lien vers ta fiche PDF -->
+                        <a href="E5 glpi_sitka SAIDOU DIA.pdf" target="_blank" class="text-secondary font-semibold hover:underline">Voir la fiche →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="text-center mt-16 reveal">
+                <a href="index.html" class="inline-flex items-center px-8 py-4 bg-dark text-white font-semibold rounded-full hover:bg-primary transition-all duration-300">
+                    <i data-feather="arrow-left" class="mr-2 w-5 h-5"></i> Retour à l'accueil
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; SAIDOU DIA - Portfolio BTS SIO SISR</p>
+            <p class="text-sm opacity-75 mt-2">2026 2027</p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-feather', 'menu');
+            } else {
+                icon.setAttribute('data-feather', 'x');
+            }
+            feather.replace();
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.querySelector('#menu-button i').setAttribute('data-feather', 'menu');
+                feather.replace();
+            });
+        });
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

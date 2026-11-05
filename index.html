@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO SISR - SA D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="Photo cv.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <style>
+    html { scroll-padding-top: 72px; }
+    .full { min-height: calc(100vh - 72px); display: flex; align-items: center; }
+    .hero-bg {
+        background:
+            radial-gradient(circle at 15% 20%, rgba(232,163,61,.35) 0%, transparent 45%),
+            radial-gradient(circle at 85% 85%, rgba(193,80,46,.30) 0%, transparent 45%),
+            linear-gradient(135deg, #0F3D34 0%, #1B6B5C 55%, #124A3F 100%);
+    }
+    .hero-title {
+        font-family: 'Fraunces', Georgia, serif;
+        background: linear-gradient(90deg, #fff 0%, #F6C877 100%);
+        -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .btn-gold { background: #E8A33D; color: #1B2420; font-weight: 600; transition: all .3s ease; }
+    .btn-gold:hover { background: #fff; transform: translateY(-2px); }
+    .photo-box { position: relative; display: grid; place-items: center; background: linear-gradient(135deg,#E8A33D,#C1502E); overflow: hidden; }
+    .photo-box span { font-family: 'Fraunces', Georgia, serif; font-size: 5rem; font-weight: 700; color: #fff; }
+    .photo-box img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+</style> 
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B6B5C',
+                        secondary: '#E8A33D',
+                        accent: '#C1502E',
+                        dark: '#1B2420',
+                        light: '#FBF9F4'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<header class="sticky top-0 z-50 bg-dark/95 backdrop-blur-sm shadow-xl transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#accueil" class="font-display text-2xl font-bold text-white hover:text-accent transition-colors duration-300">
+            SAIDOU DIA <span class="text-primary">SIO SISR</span>
+        </a>
+
+        <div class="hidden md:flex space-x-8 text-base font-medium">
+            <a href="index.html" class="nav-link text-white transition-colors duration-200">Accueil</a>
+            <a href="projets.html" class="nav-link text-white transition-colors duration-200">Epreuve E5</a>
+            <a href="epreuves.html" class="nav-link text-white transition-colors duration-200">Epreuve E6</a>
+            <a href="entreprise.html" class="nav-link text-white transition-colors duration-200">Entreprise</a>
+            <a href="veille.html" class="nav-link text-white transition-colors duration-200">Veille Technologique</a>
+        </div>
+
+        <button id="menu-button" class="md:hidden text-white focus:outline-none">
+            <i data-feather="menu" class="w-8 h-8"></i>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-dark/90 text-center pb-4">
+        <a href="index.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Accueil</a>
+        <a href="projets.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Epreuve E5</a>
+        <a href="epreuves.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Epreuve E6</a>
+        <a href="entreprise.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Entreprise</a>
+        <a href="veille.html" class="block py-2 text-white hover:bg-primary/50 transition-colors duration-200">Veille Technologique</a>
+    </div>
+</header>
+
+<body class="bg-light text-dark font-sans">
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero-bg full relative overflow-hidden text-white">
+    <div class="relative z-10 w-full px-6 md:px-16 lg:px-24 py-12">
+        <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12 max-w-[1400px] mx-auto">
+
+            <div class="flex-1 text-center md:text-left">
+                <p class="text-secondary uppercase tracking-widest text-sm font-semibold mb-4">Bonjour, moi c'est</p>
+                <h1 class="hero-title text-6xl md:text-8xl font-bold leading-tight mb-6">SAIDOU DIA</h1>
+                <p class="text-2xl md:text-4xl mb-6 opacity-95 leading-snug">
+                    Étudiant en BTS SIO option SISR,<br class="hidden md:block"> passionné de réseaux et de cybersécurité
+                </p>
+                <p class="text-lg md:text-2xl mb-10 opacity-85">
+                    En alternance chez <span class="font-semibold text-secondary"><Strong>SAFRAN </Strong></span>,
+                    En tant que Apprentie <strong>Administrateur Réseau et Sécurité </strong>
+                </p>
+                <div class="flex gap-4 items-center flex-wrap justify-center md:justify-start">
+                    <a href="#profil" class="btn-gold px-8 py-3 rounded-full text-lg">Profil</a>
+                    <a href="#Certification" class="btn-ghost px-8 py-3 rounded-full text-lg">Certification</a>
+                    <a href="#contact" class="btn-ghost px-8 py-3 rounded-full text-lg">Contacter</a>
+                </div>
+            </div>
+
+            <div class="photo-ring shrink-0">
+                <div class="photo-box w-60 h-60 md:w-96 md:h-96 rounded-full border-4 border-white/70 shadow-2xl">
+                    <span>SD</span>
+                    <img src="Photo cv.jpg" alt="Photo de Saidou Dia" onerror="this.style.display='none'">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- Profil Section -->
+    <section id="profil" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16 reveal">
+                <p class="eyebrow mb-2">Qui je suis</p>
+                <h2 class="font-display text-4xl font-bold text-primary">Mon Profil</h2>
+            </div>
+            <div class="space-y-10">
+
+                <!-- À propos -->
+                <div class="info-card p-8 md:p-10 border-l-4 border-primary reveal">
+                    <h3 class="font-display text-2xl mb-4 text-primary">À propos de moi</h3>
+                    <p class="text-lg mb-4">
+                        Je suis étudiant en <strong>BTS SIO</strong> option <strong>SISR</strong> à l'école IRIS de Paris, et ce qui me plaît par-dessus tout, c'est comprendre comment les machines communiquent entre elles  et comment les protéger.
+                    </p>
+                    <p class="text-lg mb-4">
+                        J'ai commencé mon parcours du côté du <strong>développement web</strong>, avant de trouver ma vraie voie dans l'<strong>administration réseau et la sécurité</strong>, que j'approfondis aujourd'hui en alternance.
+                    </p>
+                    <p class="text-lg">
+                        <strong>Curieux</strong> et <strong>rigoureux</strong>, j'aime autant résoudre un problème technique complexe qu'échanger avec une équipe pour trouver la meilleure solution.
+                    </p>
+                </div>
+
+                <!-- Formation & Expériences -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="info-card p-8 border-l-4 border-secondary reveal">
+                        <div class="flex items-center mb-5">
+                            <i data-feather="book-open" class="w-6 h-6 mr-2 text-secondary"></i>
+                            <h3 class="text-xl font-semibold text-secondary">Formation & Diplômes</h3>
+                        </div>
+                        <ul class="space-y-3 text-md">
+                            <li>• <strong>BTS SIO SISR</strong> (2025 - 2027) – IRIS Paris</li>
+                            <li>• <strong>Formation Développeur Web</strong> (2024 - 2025)</li>
+                            <li>• <strong>Baccalauréat Scientifique </strong> (2024)</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card p-8 border-l-4 border-accent reveal">
+                        <div class="flex items-center mb-5">
+                            <i data-feather="briefcase" class="w-6 h-6 mr-2 text-accent"></i>
+                            <h3 class="text-xl font-semibold text-accent">Expériences Pro</h3>
+                        </div>
+                        <ul class="space-y-4 text-md">
+                            <li>
+                                <strong>Apprenti Administrateur Réseau et Sécurité</strong>
+                                <p class="text-sm text-gray-600">SAFRAN — 2025 - 2027 (Alternance)</p>
+                            </li>
+                            <li>
+                                <strong>Stage Développeur Web Junior</strong>
+                                <p class="text-sm text-gray-600">SAFRAN - Amélioration d'un site web existant — 1 mois</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Centres d'intérêt -->
+                <div class="info-card p-8 border-l-4 border-primary reveal">
+                    <div class="flex items-center mb-5">
+                        <i data-feather="heart" class="w-6 h-6 mr-2 text-primary"></i>
+                        <h3 class="text-xl font-semibold text-primary">Mes centres d'intérêt</h3>
+                    </div>
+                    <!-- TODO : remplace par tes vrais centres d'intérêt -->
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-light px-4 py-2 rounded-full shadow text-sm font-medium">Réseau</span>
+                        <span class="bg-light px-4 py-2 rounded-full shadow text-sm font-medium">Cybersecurité</span>
+                        <span class="bg-light px-4 py-2 rounded-full shadow text-sm font-medium">Cloud</span>
+                    </div>
+                </div>
+
+                <!-- CV -->
+                <div class="info-card p-8 border-l-4 border-secondary reveal">
+                    <div class="flex items-center justify-between flex-wrap gap-4 mb-6">
+                        <h3 class="text-xl font-semibold text-secondary">Mon Curriculum vitæ</h3>
+                        <!-- TODO : remplacer par le lien vers ton propre CV une fois envoyé -->
+                        <a href="cv professionnel saidou.pdf" target="_blank" class="btn-solid inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold">
+                            <i data-feather="download" class="w-5 h-5"></i>
+                            Télécharger mon CV
+                        </a>
+                    </div>
+                    <!-- TODO : ce cadre affichera ton CV une fois "mon-cv.pdf" ajouté -->
+                    <iframe src="cv professionnel saidou.pdf" class="w-full h-[600px] rounded-xl border"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="Certification" class="py-24 bg-light">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16 reveal">
+                <p class="eyebrow mb-2">Preuves de compétences</p>
+                <h2 class="font-display text-4xl font-bold text-primary mb-4">Mes Certifications</h2>
+                <p class="text-lg text-gray-600">Retrouvez mes certifications en réseau et cybersécurité.</p>
+            </div>
+
+            <!-- TODO : ajoute ici tes certifications, une carte par certification (copie ce bloc pour en ajouter d'autres) -->
+           <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto reveal">
+
+    <div class="info-card p-6 flex flex-col">
+        <div class="w-full h-40 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 overflow-hidden mb-4">
+            <img src="i..png" alt="">
+        </div>
+        <div class="bg-blue-50 w-10 h-10 rounded-lg flex items-center justify-center border border-blue-100 mb-4">
+            <i data-feather="shield" class="text-blue-600 w-5 h-5"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-700 mb-2">Introduction Cybersécurité</h3>
+        <p class="text-gray-600 text-sm italic mb-6 flex-grow">Consulter le certificat d'introduction à la cybersécurité.</p>
+        <a href="Certificat Introduction_to_Cybersecurity.pdf" class="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 shadow-md transition-all w-fit">
+            Ouvrir le PDF <i data-feather="arrow-right" class="w-4 h-4"></i>
+        </a>
+    </div>
+
+    <div class="info-card p-6 flex flex-col">
+        <div class="w-full h-40 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 overflow-hidden mb-4">
+            <img src="i..png" alt="">
+        </div>
+        <div class="bg-blue-50 w-10 h-10 rounded-lg flex items-center justify-center border border-blue-100 mb-4">
+            <i data-feather="shield" class="text-blue-600 w-5 h-5"></i>
+        </div>
+        <h3 class="text-xl font-bold text-blue-700 mb-2">CCNA en cour</h3>
+        <p class="text-gray-600 text-sm italic mb-6 flex-grow">Consulter le certificat CCNA.</p>
+        <a href="#" class="inline-flex items-center justify-center gap-2 bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 shadow-md transition-all w-fit">
+            Ouvrir le PDF <i data-feather="arrow-right" class="w-4 h-4"></i>
+        </a>
+    </div>
+
+</div>
+    </section>
+
+    <section id="contact" class="full py-16 px-6 md:px-16 lg:px-24">
+    <div class="w-full max-w-[1400px] mx-auto">
+        <div class="text-center mb-14">
+            <p class="eyebrow mb-2">Échangeons</p>
+            <h2 class="text-4xl md:text-6xl">Me contacter</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <a href="mailto:ton.email@exemple.fr" class="info-card p-10">
+                <i data-feather="mail" class="w-10 h-10 text-primary mx-auto mb-3"></i>
+                <h3 class="text-2xl mb-1">Email</h3>
+                <p class="text-gray-600 text-lg break-words">ton.email@exemple.fr</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener" class="info-card p-10">
+                <i data-feather="linkedin" class="w-10 h-10 text-primary mx-auto mb-3"></i>
+                <h3 class="text-2xl mb-1">LinkedIn</h3>
+                <p class="text-gray-600 text-lg">Voir mon profil</p>
+            </a>
+
+            <a href="cv professionnel saidou.pdf" target="_blank" class="info-card p-10">
+                <i data-feather="file-text" class="w-10 h-10 text-primary mx-auto mb-3"></i>
+                <h3 class="text-2xl mb-1">Mon CV</h3>
+                <p class="text-gray-600 text-lg">Télécharger en PDF</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; SAIDOU DIA - Portfolio BTS SIO SISR</p>
+            <p class="text-sm opacity-75 mt-2"></p>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = menuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.setAttribute('data-feather', 'menu');
+            } else {
+                icon.setAttribute('data-feather', 'x');
+            }
+            feather.replace();
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                document.querySelector('#menu-button i').setAttribute('data-feather', 'menu');
+                feather.replace();
+            });
+        });
+
+        // Reveal on scroll
+        const revealEls = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealEls.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
